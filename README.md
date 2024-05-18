@@ -1,2 +1,0 @@
-# reactjspt
-React Practice
