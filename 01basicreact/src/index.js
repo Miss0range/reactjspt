@@ -4,11 +4,28 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function MyApp(){
+  return(
+    <div className="">
+      <h1>Custom React App</h1>
+    </div>
+  );
+
+}
+
+const anElement = (
+  <a href="https://google.com">Click this phishing link to visit Google. </a>
+);
+
+const areactElement = React.createElement(
+  'a',
+  {href:'https://magicaJen.com', target:`_blank`},
+  'click to visit my site.'
+);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function
