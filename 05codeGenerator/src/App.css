@@ -1,0 +1,7 @@
+#root{
+    @apply bg-slate-700;
+    @apply h-screen;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
