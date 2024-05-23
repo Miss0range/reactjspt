@@ -12,6 +12,8 @@ function App() {
   const [to,setTo] = useState('cny');
   const [convertedAmount, setConvertedAmount] = useState(0);
 
+  console.log("Re render");
+
   const currencyInfo = useCurrencyInfo(from);
   const options = Object.keys(currencyInfo);
 

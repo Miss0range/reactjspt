@@ -7,7 +7,6 @@ import Profile from './component/Profile.jsx'
 import UserContextProvider from './context/UserContextProvider.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <UserContextProvider>

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -6,11 +6,12 @@ import './App.css'
 function App() {
   
   const [counter, setCounter] = useState(15);//useState(initial value/state)
+  console.log("Rerender");
   // let counter = 15;
   const addValue = () => setCounter(counter+1);
-  const decreaseValue = () =>{
+  const decreaseValue = useCallback(() =>{
     setCounter((counter)=> counter-1);
-  };
+  },[])
 
   return (
     <>
