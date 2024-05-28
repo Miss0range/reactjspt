@@ -41,7 +41,7 @@ function Header() {
         <Container>
             <nav className='flex'>
                 <div className="m-0 w-20">
-                    <Link style={{margin:0}} to="/">
+                    <Link target='_blank' style={{margin:0}} to="https://magicajen.com/">
                         <Logo width='100px'/>
                     </Link>
                 </div>
